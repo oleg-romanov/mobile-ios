@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E6641714E1B8C5E9BF5F4B8 /* Pods_EventMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4149E78726C2B77FD8352538 /* Pods_EventMaker.framework */; };
 		EAC1207627F4209F00D239A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207527F4209F00D239A8 /* AppDelegate.swift */; };
 		EAC1207827F4209F00D239A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207727F4209F00D239A8 /* SceneDelegate.swift */; };
 		EAC1207A27F4209F00D239A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207927F4209F00D239A8 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4149E78726C2B77FD8352538 /* Pods_EventMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE58282FEE94EA4E5C9AFC9F /* Pods-EventMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.release.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.release.xcconfig"; sourceTree = "<group>"; };
 		EAC1207227F4209F00D239A8 /* EventMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC1207527F4209F00D239A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAC1207727F4209F00D239A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		EAC1207E27F420A100D239A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAC1208127F420A100D239A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAC1208327F420A100D239A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D14608019A6045D9AA9E64 /* Pods-EventMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.debug.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E6641714E1B8C5E9BF5F4B8 /* Pods_EventMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FC7768310FDB09C0A7F5877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4149E78726C2B77FD8352538 /* Pods_EventMaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72BA7980988E0A67DC615812 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3D14608019A6045D9AA9E64 /* Pods-EventMaker.debug.xcconfig */,
+				CE58282FEE94EA4E5C9AFC9F /* Pods-EventMaker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EAC1206927F4209F00D239A8 = {
 			isa = PBXGroup;
 			children = (
 				EAC1207427F4209F00D239A8 /* EventMaker */,
 				EAC1207327F4209F00D239A8 /* Products */,
+				72BA7980988E0A67DC615812 /* Pods */,
+				4FC7768310FDB09C0A7F5877 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAC1208627F420A100D239A8 /* Build configuration list for PBXNativeTarget "EventMaker" */;
 			buildPhases = (
+				56BE37BC6A578C0B151B91EA /* [CP] Check Pods Manifest.lock */,
 				EAC1206E27F4209F00D239A8 /* Sources */,
 				EAC1206F27F4209F00D239A8 /* Frameworks */,
 				EAC1207027F4209F00D239A8 /* Resources */,
+				2CC36E614F3F6B12ED4D0156 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CC36E614F3F6B12ED4D0156 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventMaker/Pods-EventMaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventMaker/Pods-EventMaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventMaker/Pods-EventMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56BE37BC6A578C0B151B91EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAC1206E27F4209F00D239A8 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		EAC1208727F420A100D239A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D14608019A6045D9AA9E64 /* Pods-EventMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		EAC1208827F420A100D239A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE58282FEE94EA4E5C9AFC9F /* Pods-EventMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
