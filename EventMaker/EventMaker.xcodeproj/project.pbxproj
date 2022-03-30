@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1E6641714E1B8C5E9BF5F4B8 /* Pods_EventMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4149E78726C2B77FD8352538 /* Pods_EventMaker.framework */; };
+		EA77165E281080BB0050B972 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EA77165D281080BB0050B972 /* swiftgen.yml */; };
+		EA7716662810826A0050B972 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7716652810826A0050B972 /* Assets.swift */; };
+		EA77166B281086510050B972 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA77166D281086510050B972 /* Localizable.strings */; };
 		EAC1207627F4209F00D239A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207527F4209F00D239A8 /* AppDelegate.swift */; };
-		EAC1207827F4209F00D239A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207727F4209F00D239A8 /* SceneDelegate.swift */; };
 		EAC1207A27F4209F00D239A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207927F4209F00D239A8 /* ViewController.swift */; };
-		EAC1207D27F4209F00D239A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC1207B27F4209F00D239A8 /* Main.storyboard */; };
 		EAC1207F27F420A100D239A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC1207E27F420A100D239A8 /* Assets.xcassets */; };
 		EAC1208227F420A100D239A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC1208027F420A100D239A8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,11 +20,14 @@
 /* Begin PBXFileReference section */
 		4149E78726C2B77FD8352538 /* Pods_EventMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE58282FEE94EA4E5C9AFC9F /* Pods-EventMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.release.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.release.xcconfig"; sourceTree = "<group>"; };
+		EA77165D281080BB0050B972 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		EA7716652810826A0050B972 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		EA77166C281086510050B972 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EA77166E281086680050B972 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EA77166F281086680050B972 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EAC1207227F4209F00D239A8 /* EventMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC1207527F4209F00D239A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAC1207727F4209F00D239A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EAC1207927F4209F00D239A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EAC1207C27F4209F00D239A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAC1207E27F420A100D239A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAC1208127F420A100D239A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAC1208327F420A100D239A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,13 +60,21 @@
 				F3D14608019A6045D9AA9E64 /* Pods-EventMaker.debug.xcconfig */,
 				CE58282FEE94EA4E5C9AFC9F /* Pods-EventMaker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA77165F281081980050B972 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				EA7716652810826A0050B972 /* Assets.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		EAC1206927F4209F00D239A8 = {
 			isa = PBXGroup;
 			children = (
+				EA77165D281080BB0050B972 /* swiftgen.yml */,
 				EAC1207427F4209F00D239A8 /* EventMaker */,
 				EAC1207327F4209F00D239A8 /* Products */,
 				72BA7980988E0A67DC615812 /* Pods */,
@@ -81,15 +93,55 @@
 		EAC1207427F4209F00D239A8 /* EventMaker */ = {
 			isa = PBXGroup;
 			children = (
-				EAC1207527F4209F00D239A8 /* AppDelegate.swift */,
-				EAC1207727F4209F00D239A8 /* SceneDelegate.swift */,
-				EAC1207927F4209F00D239A8 /* ViewController.swift */,
-				EAC1207B27F4209F00D239A8 /* Main.storyboard */,
-				EAC1207E27F420A100D239A8 /* Assets.xcassets */,
-				EAC1208027F420A100D239A8 /* LaunchScreen.storyboard */,
 				EAC1208327F420A100D239A8 /* Info.plist */,
+				EAC1208927F423EB00D239A8 /* Common */,
+				EAC1208A27F423FA00D239A8 /* MainFiles */,
+				EAC1208B27F4242600D239A8 /* Services */,
+				EAC1208C27F4242C00D239A8 /* Modules */,
+				EAC1208D27F4243D00D239A8 /* Resources */,
 			);
 			path = EventMaker;
+			sourceTree = "<group>";
+		};
+		EAC1208927F423EB00D239A8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EA77165F281081980050B972 /* Generated */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EAC1208A27F423FA00D239A8 /* MainFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1208027F420A100D239A8 /* LaunchScreen.storyboard */,
+				EAC1207527F4209F00D239A8 /* AppDelegate.swift */,
+			);
+			path = MainFiles;
+			sourceTree = "<group>";
+		};
+		EAC1208B27F4242600D239A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EAC1208C27F4242C00D239A8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1207927F4209F00D239A8 /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EAC1208D27F4243D00D239A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1207E27F420A100D239A8 /* Assets.xcassets */,
+				EA77166D281086510050B972 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +188,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = EAC1206927F4209F00D239A8;
 			productRefGroup = EAC1207327F4209F00D239A8 /* Products */;
@@ -153,8 +206,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC1208227F420A100D239A8 /* LaunchScreen.storyboard in Resources */,
+				EA77166B281086510050B972 /* Localizable.strings in Resources */,
 				EAC1207F27F420A100D239A8 /* Assets.xcassets in Resources */,
-				EAC1207D27F4209F00D239A8 /* Main.storyboard in Resources */,
+				EA77165E281080BB0050B972 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,25 +263,27 @@
 			files = (
 				EAC1207A27F4209F00D239A8 /* ViewController.swift in Sources */,
 				EAC1207627F4209F00D239A8 /* AppDelegate.swift in Sources */,
-				EAC1207827F4209F00D239A8 /* SceneDelegate.swift in Sources */,
+				EA7716662810826A0050B972 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EAC1207B27F4209F00D239A8 /* Main.storyboard */ = {
+		EA77166D281086510050B972 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EAC1207C27F4209F00D239A8 /* Base */,
+				EA77166C281086510050B972 /* en */,
+				EA77166F281086680050B972 /* ru */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		EAC1208027F420A100D239A8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EAC1208127F420A100D239A8 /* Base */,
+				EA77166E281086680050B972 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -239,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -286,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -300,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -341,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
