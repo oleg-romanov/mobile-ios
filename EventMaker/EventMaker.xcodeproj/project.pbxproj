@@ -11,8 +11,12 @@
 		EA77165E281080BB0050B972 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EA77165D281080BB0050B972 /* swiftgen.yml */; };
 		EA7716662810826A0050B972 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7716652810826A0050B972 /* Assets.swift */; };
 		EA77166B281086510050B972 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA77166D281086510050B972 /* Localizable.strings */; };
+		EA771672281086680050B972 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771671281086680050B972 /* OnboardingModel.swift */; };
+		EA771675281086680050B972 /* SlidesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771674281086680050B972 /* SlidesDataSource.swift */; };
+		EA771677281086680050B972 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771676281086680050B972 /* OnboardingView.swift */; };
+		EA77167A281086680050B972 /* SlideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771679281086680050B972 /* SlideCell.swift */; };
 		EAC1207627F4209F00D239A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207527F4209F00D239A8 /* AppDelegate.swift */; };
-		EAC1207A27F4209F00D239A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207927F4209F00D239A8 /* ViewController.swift */; };
+		EAC1207A27F4209F00D239A8 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207927F4209F00D239A8 /* OnboardingController.swift */; };
 		EAC1207F27F420A100D239A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC1207E27F420A100D239A8 /* Assets.xcassets */; };
 		EAC1208227F420A100D239A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC1208027F420A100D239A8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -25,9 +29,13 @@
 		EA77166C281086510050B972 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EA77166E281086680050B972 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EA77166F281086680050B972 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EA771671281086680050B972 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		EA771674281086680050B972 /* SlidesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidesDataSource.swift; sourceTree = "<group>"; };
+		EA771676281086680050B972 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EA771679281086680050B972 /* SlideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCell.swift; sourceTree = "<group>"; };
 		EAC1207227F4209F00D239A8 /* EventMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC1207527F4209F00D239A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAC1207927F4209F00D239A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAC1207927F4209F00D239A8 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		EAC1207E27F420A100D239A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAC1208127F420A100D239A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAC1208327F420A100D239A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +77,34 @@
 				EA7716652810826A0050B972 /* Assets.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		EA771670281086680050B972 /* OndoardingController */ = {
+			isa = PBXGroup;
+			children = (
+				EA771671281086680050B972 /* OnboardingModel.swift */,
+				EAC1207927F4209F00D239A8 /* OnboardingController.swift */,
+				EA771673281086680050B972 /* View */,
+				EA771678281086680050B972 /* Cell */,
+			);
+			path = OndoardingController;
+			sourceTree = "<group>";
+		};
+		EA771673281086680050B972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA771674281086680050B972 /* SlidesDataSource.swift */,
+				EA771676281086680050B972 /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA771678281086680050B972 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EA771679281086680050B972 /* SlideCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		EAC1206927F4209F00D239A8 = {
@@ -130,7 +166,7 @@
 		EAC1208C27F4242C00D239A8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EAC1207927F4209F00D239A8 /* ViewController.swift */,
+				EA771670281086680050B972 /* OndoardingController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -261,9 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC1207A27F4209F00D239A8 /* ViewController.swift in Sources */,
+				EA771672281086680050B972 /* OnboardingModel.swift in Sources */,
+				EAC1207A27F4209F00D239A8 /* OnboardingController.swift in Sources */,
+				EA771675281086680050B972 /* SlidesDataSource.swift in Sources */,
+				EA771677281086680050B972 /* OnboardingView.swift in Sources */,
 				EAC1207627F4209F00D239A8 /* AppDelegate.swift in Sources */,
 				EA7716662810826A0050B972 /* Assets.swift in Sources */,
+				EA77167A281086680050B972 /* SlideCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
