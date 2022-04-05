@@ -15,6 +15,17 @@
 		EA771675281086680050B972 /* SlidesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771674281086680050B972 /* SlidesDataSource.swift */; };
 		EA771677281086680050B972 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771676281086680050B972 /* OnboardingView.swift */; };
 		EA77167A281086680050B972 /* SlideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771679281086680050B972 /* SlideCell.swift */; };
+		EA77167D281086680050B972 /* StartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77167C281086680050B972 /* StartProtocols.swift */; };
+		EA77167F281086680050B972 /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77167E281086680050B972 /* StartPresenter.swift */; };
+		EA771681281086680050B972 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771680281086680050B972 /* StartController.swift */; };
+		EA771684281086680050B972 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771683281086680050B972 /* StartView.swift */; };
+		EA771686281086680050B972 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771685281086680050B972 /* Grid.swift */; };
+		EA771688281086680050B972 /* StyleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771687281086680050B972 /* StyleUtils.swift */; };
+		EA77168B281086680050B972 /* ButtonSignInWithEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77168A281086680050B972 /* ButtonSignInWithEmail.swift */; };
+		EA77168D281086680050B972 /* ButtonSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77168C281086680050B972 /* ButtonSignIn.swift */; };
+		EA77168F281086680050B972 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77168E281086680050B972 /* Text.swift */; };
+		EA771691281086680050B972 /* ButtonSecondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771690281086680050B972 /* ButtonSecondary.swift */; };
+		EA771693281086680050B972 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA771692281086680050B972 /* ButtonDefault.swift */; };
 		EAC1207627F4209F00D239A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207527F4209F00D239A8 /* AppDelegate.swift */; };
 		EAC1207A27F4209F00D239A8 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC1207927F4209F00D239A8 /* OnboardingController.swift */; };
 		EAC1207F27F420A100D239A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC1207E27F420A100D239A8 /* Assets.xcassets */; };
@@ -33,6 +44,17 @@
 		EA771674281086680050B972 /* SlidesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidesDataSource.swift; sourceTree = "<group>"; };
 		EA771676281086680050B972 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EA771679281086680050B972 /* SlideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCell.swift; sourceTree = "<group>"; };
+		EA77167C281086680050B972 /* StartProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartProtocols.swift; sourceTree = "<group>"; };
+		EA77167E281086680050B972 /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
+		EA771680281086680050B972 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
+		EA771683281086680050B972 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		EA771685281086680050B972 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		EA771687281086680050B972 /* StyleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleUtils.swift; sourceTree = "<group>"; };
+		EA77168A281086680050B972 /* ButtonSignInWithEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSignInWithEmail.swift; sourceTree = "<group>"; };
+		EA77168C281086680050B972 /* ButtonSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSignIn.swift; sourceTree = "<group>"; };
+		EA77168E281086680050B972 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		EA771690281086680050B972 /* ButtonSecondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSecondary.swift; sourceTree = "<group>"; };
+		EA771692281086680050B972 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
 		EAC1207227F4209F00D239A8 /* EventMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC1207527F4209F00D239A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAC1207927F4209F00D239A8 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
@@ -75,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EA7716652810826A0050B972 /* Assets.swift */,
+				EA77168E281086680050B972 /* Text.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -105,6 +128,36 @@
 				EA771679281086680050B972 /* SlideCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		EA77167B281086680050B972 /* StartController */ = {
+			isa = PBXGroup;
+			children = (
+				EA77167C281086680050B972 /* StartProtocols.swift */,
+				EA77167E281086680050B972 /* StartPresenter.swift */,
+				EA771680281086680050B972 /* StartController.swift */,
+				EA771682281086680050B972 /* View */,
+			);
+			path = StartController;
+			sourceTree = "<group>";
+		};
+		EA771682281086680050B972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA771683281086680050B972 /* StartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA771689281086680050B972 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EA77168A281086680050B972 /* ButtonSignInWithEmail.swift */,
+				EA77168C281086680050B972 /* ButtonSignIn.swift */,
+				EA771690281086680050B972 /* ButtonSecondary.swift */,
+				EA771692281086680050B972 /* ButtonDefault.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		EAC1206927F4209F00D239A8 = {
@@ -142,7 +195,10 @@
 		EAC1208927F423EB00D239A8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EA771689281086680050B972 /* Buttons */,
 				EA77165F281081980050B972 /* Generated */,
+				EA771685281086680050B972 /* Grid.swift */,
+				EA771687281086680050B972 /* StyleUtils.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -166,6 +222,7 @@
 		EAC1208C27F4242C00D239A8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EA77167B281086680050B972 /* StartController */,
 				EA771670281086680050B972 /* OndoardingController */,
 			);
 			path = Modules;
@@ -297,13 +354,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA77168D281086680050B972 /* ButtonSignIn.swift in Sources */,
+				EA771693281086680050B972 /* ButtonDefault.swift in Sources */,
+				EA771688281086680050B972 /* StyleUtils.swift in Sources */,
 				EA771672281086680050B972 /* OnboardingModel.swift in Sources */,
+				EA771684281086680050B972 /* StartView.swift in Sources */,
 				EAC1207A27F4209F00D239A8 /* OnboardingController.swift in Sources */,
+				EA77168B281086680050B972 /* ButtonSignInWithEmail.swift in Sources */,
+				EA771681281086680050B972 /* StartController.swift in Sources */,
+				EA77167D281086680050B972 /* StartProtocols.swift in Sources */,
 				EA771675281086680050B972 /* SlidesDataSource.swift in Sources */,
 				EA771677281086680050B972 /* OnboardingView.swift in Sources */,
+				EA77168F281086680050B972 /* Text.swift in Sources */,
+				EA771691281086680050B972 /* ButtonSecondary.swift in Sources */,
 				EAC1207627F4209F00D239A8 /* AppDelegate.swift in Sources */,
 				EA7716662810826A0050B972 /* Assets.swift in Sources */,
 				EA77167A281086680050B972 /* SlideCell.swift in Sources */,
+				EA77167F281086680050B972 /* StartPresenter.swift in Sources */,
+				EA771686281086680050B972 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
