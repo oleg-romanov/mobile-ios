@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1E6641714E1B8C5E9BF5F4B8 /* Pods_EventMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4149E78726C2B77FD8352538 /* Pods_EventMaker.framework */; };
+		EA4B617027FE34CC00810893 /* SignInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B616F27FE34CC00810893 /* SignInProtocols.swift */; };
+		EA4B617227FE34E600810893 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B617127FE34E600810893 /* SignInPresenter.swift */; };
+		EA4B617527FF875600810893 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B617427FF875600810893 /* Keys.swift */; };
+		EA4B617827FF879A00810893 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B617727FF879A00810893 /* AuthModels.swift */; };
+		EA4B617A27FF87BA00810893 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B617927FF87BA00810893 /* AuthService.swift */; };
+		EA4B617C27FF87ED00810893 /* AuthServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B617B27FF87ED00810893 /* AuthServiceApi.swift */; };
+		EA4B617E27FF883100810893 /* URLPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B617D27FF883100810893 /* URLPath.swift */; };
+		EA4B618027FF888D00810893 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B617F27FF888D00810893 /* SignInController.swift */; };
+		EA4B618427FF892800810893 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B618227FF892800810893 /* SignInView.swift */; };
+		EA4B618527FF892800810893 /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4B618327FF892800810893 /* SignInView.xib */; };
+		EA4B618727FF898700810893 /* MDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B618627FF898700810893 /* MDTextField.swift */; };
 		EA77165E281080BB0050B972 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EA77165D281080BB0050B972 /* swiftgen.yml */; };
 		EA7716662810826A0050B972 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7716652810826A0050B972 /* Assets.swift */; };
 		EA77166B281086510050B972 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA77166D281086510050B972 /* Localizable.strings */; };
@@ -35,6 +46,17 @@
 /* Begin PBXFileReference section */
 		4149E78726C2B77FD8352538 /* Pods_EventMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE58282FEE94EA4E5C9AFC9F /* Pods-EventMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.release.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.release.xcconfig"; sourceTree = "<group>"; };
+		EA4B616F27FE34CC00810893 /* SignInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocols.swift; sourceTree = "<group>"; };
+		EA4B617127FE34E600810893 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		EA4B617427FF875600810893 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		EA4B617727FF879A00810893 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		EA4B617927FF87BA00810893 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		EA4B617B27FF87ED00810893 /* AuthServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceApi.swift; sourceTree = "<group>"; };
+		EA4B617D27FF883100810893 /* URLPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPath.swift; sourceTree = "<group>"; };
+		EA4B617F27FF888D00810893 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		EA4B618227FF892800810893 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		EA4B618327FF892800810893 /* SignInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
+		EA4B618627FF898700810893 /* MDTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDTextField.swift; sourceTree = "<group>"; };
 		EA77165D281080BB0050B972 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		EA7716652810826A0050B972 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		EA77166C281086510050B972 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -91,6 +113,47 @@
 				CE58282FEE94EA4E5C9AFC9F /* Pods-EventMaker.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA4B616E27FE34B100810893 /* SignInController */ = {
+			isa = PBXGroup;
+			children = (
+				EA4B616F27FE34CC00810893 /* SignInProtocols.swift */,
+				EA4B617127FE34E600810893 /* SignInPresenter.swift */,
+				EA4B617F27FF888D00810893 /* SignInController.swift */,
+				EA4B618127FF88D900810893 /* View */,
+			);
+			path = SignInController;
+			sourceTree = "<group>";
+		};
+		EA4B617327FE351400810893 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EA4B617427FF875600810893 /* Keys.swift */,
+				EA771670281086680050B972 /* OndoardingController */,
+				EA77167B281086680050B972 /* StartController */,
+				EA4B616E27FE34B100810893 /* SignInController */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		EA4B617627FF877F00810893 /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				EA4B617727FF879A00810893 /* AuthModels.swift */,
+				EA4B617927FF87BA00810893 /* AuthService.swift */,
+				EA4B617B27FF87ED00810893 /* AuthServiceApi.swift */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		EA4B618127FF88D900810893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA4B618227FF892800810893 /* SignInView.swift */,
+				EA4B618327FF892800810893 /* SignInView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EA77165F281081980050B972 /* Generated */ = {
@@ -199,6 +262,7 @@
 				EA77165F281081980050B972 /* Generated */,
 				EA771685281086680050B972 /* Grid.swift */,
 				EA771687281086680050B972 /* StyleUtils.swift */,
+				EA4B618627FF898700810893 /* MDTextField.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -215,6 +279,8 @@
 		EAC1208B27F4242600D239A8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EA4B617D27FF883100810893 /* URLPath.swift */,
+				EA4B617627FF877F00810893 /* AuthService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -222,8 +288,7 @@
 		EAC1208C27F4242C00D239A8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EA77167B281086680050B972 /* StartController */,
-				EA771670281086680050B972 /* OndoardingController */,
+				EA4B617327FE351400810893 /* Authentication */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -302,6 +367,7 @@
 				EA77166B281086510050B972 /* Localizable.strings in Resources */,
 				EAC1207F27F420A100D239A8 /* Assets.xcassets in Resources */,
 				EA77165E281080BB0050B972 /* swiftgen.yml in Resources */,
+				EA4B618527FF892800810893 /* SignInView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,21 +421,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA77168D281086680050B972 /* ButtonSignIn.swift in Sources */,
+				EA4B617A27FF87BA00810893 /* AuthService.swift in Sources */,
 				EA771693281086680050B972 /* ButtonDefault.swift in Sources */,
+				EA4B618027FF888D00810893 /* SignInController.swift in Sources */,
 				EA771688281086680050B972 /* StyleUtils.swift in Sources */,
 				EA771672281086680050B972 /* OnboardingModel.swift in Sources */,
+				EA4B617527FF875600810893 /* Keys.swift in Sources */,
+				EA4B617227FE34E600810893 /* SignInPresenter.swift in Sources */,
+				EA4B617027FE34CC00810893 /* SignInProtocols.swift in Sources */,
 				EA771684281086680050B972 /* StartView.swift in Sources */,
+				EA4B618727FF898700810893 /* MDTextField.swift in Sources */,
 				EAC1207A27F4209F00D239A8 /* OnboardingController.swift in Sources */,
 				EA77168B281086680050B972 /* ButtonSignInWithEmail.swift in Sources */,
 				EA771681281086680050B972 /* StartController.swift in Sources */,
+				EA4B617C27FF87ED00810893 /* AuthServiceApi.swift in Sources */,
 				EA77167D281086680050B972 /* StartProtocols.swift in Sources */,
 				EA771675281086680050B972 /* SlidesDataSource.swift in Sources */,
 				EA771677281086680050B972 /* OnboardingView.swift in Sources */,
 				EA77168F281086680050B972 /* Text.swift in Sources */,
+				EA4B618427FF892800810893 /* SignInView.swift in Sources */,
 				EA771691281086680050B972 /* ButtonSecondary.swift in Sources */,
+				EA4B617E27FF883100810893 /* URLPath.swift in Sources */,
 				EAC1207627F4209F00D239A8 /* AppDelegate.swift in Sources */,
 				EA7716662810826A0050B972 /* Assets.swift in Sources */,
 				EA77167A281086680050B972 /* SlideCell.swift in Sources */,
+				EA4B617827FF879A00810893 /* AuthModels.swift in Sources */,
 				EA77167F281086680050B972 /* StartPresenter.swift in Sources */,
 				EA771686281086680050B972 /* Grid.swift in Sources */,
 			);

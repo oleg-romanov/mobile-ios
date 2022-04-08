@@ -49,3 +49,5 @@ class StartController: UIViewController {
         navigationItem.backButtonTitle = ""
     }
 }
+
+extension StartController: StartViewInput {}
