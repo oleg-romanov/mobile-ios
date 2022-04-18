@@ -16,6 +16,12 @@ struct SignInRequest: Encodable {
     let password: String
 }
 
+struct SignUpRequest: Encodable {
+    let name: String
+    let email: String
+    let password: String
+}
+
 struct TokenResponse: Decodable {
     let token: String
 }

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpController" customModule="Toast" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Mro-sO-a2Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SignUpView" customModule="Toast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OfT-mH-tGs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1n-WS-Wbs">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ym1-9R-KQc" customClass="MDTextField" customModule="Toast" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="20" width="350" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="tFQ-lO-fMU"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" textContentType="name"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isFloatingPlaceholder" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Name"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LaN-ti-mWP" customClass="MDTextField" customModule="Toast" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="90" width="350" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="oCw-XD-iiQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isFloatingPlaceholder" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A6T-LW-kIW" customClass="MDTextField" customModule="Toast" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="160" width="350" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="lmu-t3-jGC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isFloatingPlaceholder" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3R-Up-mVQ" customClass="MDTextField" customModule="Toast" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="230" width="350" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="zzv-kl-4H6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isFloatingPlaceholder" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Confirm Password"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Bae-z2-mpt">
+                                    <rect key="frame" x="157" y="150" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="3I5-rv-JnV"/>
+                                        <constraint firstAttribute="width" constant="100" id="wtH-d0-Ygh"/>
+                                    </constraints>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Ym1-9R-KQc" secondAttribute="trailing" constant="32" id="1tV-6U-9KJ"/>
+                                <constraint firstItem="Ym1-9R-KQc" firstAttribute="leading" secondItem="m1n-WS-Wbs" secondAttribute="leading" constant="32" id="C5X-Ey-mQy"/>
+                                <constraint firstItem="A6T-LW-kIW" firstAttribute="top" secondItem="LaN-ti-mWP" secondAttribute="bottom" id="Gd5-GC-gPt"/>
+                                <constraint firstItem="LaN-ti-mWP" firstAttribute="leading" secondItem="m1n-WS-Wbs" secondAttribute="leading" constant="32" id="GqN-58-ING"/>
+                                <constraint firstItem="LaN-ti-mWP" firstAttribute="top" secondItem="Ym1-9R-KQc" secondAttribute="bottom" id="HGd-zu-76J"/>
+                                <constraint firstAttribute="height" constant="400" id="HHJ-0d-WYg"/>
+                                <constraint firstItem="Ym1-9R-KQc" firstAttribute="top" secondItem="m1n-WS-Wbs" secondAttribute="top" constant="20" id="QGp-4I-RrJ"/>
+                                <constraint firstAttribute="trailing" secondItem="LaN-ti-mWP" secondAttribute="trailing" constant="32" id="a5c-rr-gMZ"/>
+                                <constraint firstItem="Bae-z2-mpt" firstAttribute="centerX" secondItem="m1n-WS-Wbs" secondAttribute="centerX" id="df2-Sf-ck7"/>
+                                <constraint firstItem="A3R-Up-mVQ" firstAttribute="leading" secondItem="m1n-WS-Wbs" secondAttribute="leading" constant="32" id="lOw-3v-XR2"/>
+                                <constraint firstItem="A3R-Up-mVQ" firstAttribute="top" secondItem="A6T-LW-kIW" secondAttribute="bottom" id="s3f-j9-Biu"/>
+                                <constraint firstItem="A6T-LW-kIW" firstAttribute="leading" secondItem="m1n-WS-Wbs" secondAttribute="leading" constant="32" id="say-as-sh1"/>
+                                <constraint firstAttribute="trailing" secondItem="A6T-LW-kIW" secondAttribute="trailing" constant="32" id="vgE-pK-Om9"/>
+                                <constraint firstAttribute="trailing" secondItem="A3R-Up-mVQ" secondAttribute="trailing" constant="32" id="wRE-zf-kOm"/>
+                                <constraint firstItem="Bae-z2-mpt" firstAttribute="centerY" secondItem="m1n-WS-Wbs" secondAttribute="centerY" id="ykA-Ob-bPx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="m1n-WS-Wbs" secondAttribute="bottom" id="6bP-nf-fTC"/>
+                        <constraint firstAttribute="trailing" secondItem="m1n-WS-Wbs" secondAttribute="trailing" id="MTi-hj-Nd6"/>
+                        <constraint firstItem="m1n-WS-Wbs" firstAttribute="leading" secondItem="OfT-mH-tGs" secondAttribute="leading" id="Qrm-Js-XwG"/>
+                        <constraint firstItem="m1n-WS-Wbs" firstAttribute="top" secondItem="OfT-mH-tGs" secondAttribute="top" id="f0O-G7-KZM"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="yrv-e7-elq"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="ggm-XP-W4O"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OfT-mH-tGs" secondAttribute="bottom" id="9Hf-gE-z2V"/>
+                <constraint firstItem="OfT-mH-tGs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CKN-BS-BaQ"/>
+                <constraint firstItem="m1n-WS-Wbs" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="EJu-Bh-WQt"/>
+                <constraint firstItem="OfT-mH-tGs" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Iee-PY-l7l"/>
+                <constraint firstItem="OfT-mH-tGs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TAn-s6-QVU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmPassTextField" destination="A3R-Up-mVQ" id="TYX-Ko-i8I"/>
+                <outlet property="emailTextField" destination="LaN-ti-mWP" id="wFY-B3-i5Q"/>
+                <outlet property="nameTextField" destination="Ym1-9R-KQc" id="teP-Ug-xte"/>
+                <outlet property="passwordTextField" destination="A6T-LW-kIW" id="EKs-pf-Azc"/>
+                <outlet property="scrollView" destination="OfT-mH-tGs" id="qRP-Uq-gkk"/>
+                <outlet property="spinner" destination="Bae-z2-mpt" id="KSm-La-4YI"/>
+            </connections>
+            <point key="canvasLocation" x="-213.04347826086959" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
