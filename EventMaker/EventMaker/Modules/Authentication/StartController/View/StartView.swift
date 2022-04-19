@@ -114,9 +114,9 @@ class StartView: UIView {
         }
         signInWithEmail.snp.makeConstraints { make in
             if ScreenSize.current != .sizeIPhoneSE {
-                make.bottom.equalToSuperview().inset(-appearance.xxxlSpace + appearance.xxxlSpace + appearance.xxsSpace)
+                make.bottom.equalToSuperview().inset(appearance.xxxlSpace + appearance.xxsSpace)
             } else {
-                make.bottom.equalToSuperview().inset(-appearance.mSpace + appearance.mSpace - appearance.xxxsSpace)
+                make.bottom.equalToSuperview().inset(appearance.mSpace - appearance.xxxsSpace)
             }
             // на se коэфф: 0,5; на 7: 0,7 на 10: 1
             make.centerX.equalToSuperview()
