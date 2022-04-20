@@ -47,7 +47,10 @@ class SignInController: UIViewController {
     }
 
     @objc private func registrationButtonTapped() {
-        // TODO: Переход на экран регистрации
+        let signUpVC = SignUpController()
+        let signUpPresenter = SignUpPresenter(view: signUpVC)
+        signUpVC.presenter = signUpPresenter
+        navigationController?.pushViewController(signUpVC, animated: true)
         navigationItem.backButtonTitle = ""
     }
 
