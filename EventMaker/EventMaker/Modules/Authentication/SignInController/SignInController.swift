@@ -55,7 +55,7 @@ class SignInController: UIViewController {
     }
 
     @objc private func passwordRecoveryButtonTapped() {
-        // TODO: Показать экран с вводом email
+        navigationController?.pushViewController(EnterEmailController(), animated: true)
         navigationItem.backButtonTitle = ""
     }
 

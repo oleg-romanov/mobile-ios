@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnterEmailController" customModule="Toast" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="wRw-Mb-ciB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EnterEmailView" customModule="Toast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWP-oG-PaB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAZ-Ld-ZAT">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0y-oD-wtE">
+                                    <rect key="frame" x="32" y="40" width="350" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2lm-KF-alh" customClass="MDTextField" customModule="Toast" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="89.5" width="350" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="IBR-oV-gyz"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isFloatingPlaceholder" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="u0y-oD-wtE" secondAttribute="trailing" constant="32" id="1Ez-5d-bPj"/>
+                                <constraint firstItem="2lm-KF-alh" firstAttribute="top" secondItem="u0y-oD-wtE" secondAttribute="bottom" constant="28" id="7LW-7Z-Wdx"/>
+                                <constraint firstItem="u0y-oD-wtE" firstAttribute="top" secondItem="dAZ-Ld-ZAT" secondAttribute="top" constant="40" id="Aix-Zm-DR2"/>
+                                <constraint firstItem="u0y-oD-wtE" firstAttribute="leading" secondItem="dAZ-Ld-ZAT" secondAttribute="leading" constant="32" id="SEJ-bP-N3a"/>
+                                <constraint firstAttribute="trailing" secondItem="2lm-KF-alh" secondAttribute="trailing" constant="32" id="dGl-SQ-pZU"/>
+                                <constraint firstAttribute="height" constant="400" id="hBA-qL-gfr"/>
+                                <constraint firstItem="2lm-KF-alh" firstAttribute="leading" secondItem="dAZ-Ld-ZAT" secondAttribute="leading" constant="32" id="qdG-H7-0rJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="dAZ-Ld-ZAT" firstAttribute="leading" secondItem="kWP-oG-PaB" secondAttribute="leading" id="DFy-BZ-X1u"/>
+                        <constraint firstAttribute="trailing" secondItem="dAZ-Ld-ZAT" secondAttribute="trailing" id="HX5-9L-LbV"/>
+                        <constraint firstItem="dAZ-Ld-ZAT" firstAttribute="top" secondItem="kWP-oG-PaB" secondAttribute="top" id="nbr-O7-u0W"/>
+                        <constraint firstAttribute="bottom" secondItem="dAZ-Ld-ZAT" secondAttribute="bottom" id="pWn-Ba-Fjc"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="bkH-Gv-K3s"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="TgQ-F3-1HL"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kWP-oG-PaB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="0Dk-Y0-zCb"/>
+                <constraint firstAttribute="bottom" secondItem="kWP-oG-PaB" secondAttribute="bottom" id="3OK-y1-mCk"/>
+                <constraint firstItem="dAZ-Ld-ZAT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="CZY-pZ-wzX"/>
+                <constraint firstItem="kWP-oG-PaB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OgW-xw-qMq"/>
+                <constraint firstItem="kWP-oG-PaB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bvv-Of-1RO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="emailTextField" destination="2lm-KF-alh" id="mbW-Qh-HlO"/>
+                <outlet property="scrollView" destination="kWP-oG-PaB" id="zMo-qL-C4b"/>
+                <outlet property="textLabel" destination="u0y-oD-wtE" id="pvl-29-Cja"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="86.383928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

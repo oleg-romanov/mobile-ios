@@ -24,6 +24,10 @@
 		EA4B618E280A17C900810893 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B618D280A17C900810893 /* SignUpController.swift */; };
 		EA4B6192280A181500810893 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4B6190280A181500810893 /* SignUpView.xib */; };
 		EA4B6193280A181500810893 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B6191280A181500810893 /* SignUpView.swift */; };
+		EA4B6197280FC8A900810893 /* EnterEmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B6196280FC8A900810893 /* EnterEmailController.swift */; };
+		EA4B619B280FC91100810893 /* EnterEmailNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B6198280FC91100810893 /* EnterEmailNextView.swift */; };
+		EA4B619C280FC91100810893 /* EnterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B6199280FC91100810893 /* EnterEmailView.swift */; };
+		EA4B619D280FC91100810893 /* EnterEmailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4B619A280FC91100810893 /* EnterEmailView.xib */; };
 		EA77165E281080BB0050B972 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EA77165D281080BB0050B972 /* swiftgen.yml */; };
 		EA7716662810826A0050B972 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7716652810826A0050B972 /* Assets.swift */; };
 		EA77166B281086510050B972 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA77166D281086510050B972 /* Localizable.strings */; };
@@ -67,6 +71,10 @@
 		EA4B618D280A17C900810893 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		EA4B6190280A181500810893 /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		EA4B6191280A181500810893 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		EA4B6196280FC8A900810893 /* EnterEmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailController.swift; sourceTree = "<group>"; };
+		EA4B6198280FC91100810893 /* EnterEmailNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterEmailNextView.swift; sourceTree = "<group>"; };
+		EA4B6199280FC91100810893 /* EnterEmailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterEmailView.swift; sourceTree = "<group>"; };
+		EA4B619A280FC91100810893 /* EnterEmailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterEmailView.xib; sourceTree = "<group>"; };
 		EA77165D281080BB0050B972 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		EA7716652810826A0050B972 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		EA77166C281086510050B972 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 				EA77167B281086680050B972 /* StartController */,
 				EA4B616E27FE34B100810893 /* SignInController */,
 				EA4B6188280A177500810893 /* SignUpController */,
+				EA4B6194280FC87A00810893 /* EnterEmailController */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -183,6 +192,25 @@
 			children = (
 				EA4B6191280A181500810893 /* SignUpView.swift */,
 				EA4B6190280A181500810893 /* SignUpView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA4B6194280FC87A00810893 /* EnterEmailController */ = {
+			isa = PBXGroup;
+			children = (
+				EA4B6196280FC8A900810893 /* EnterEmailController.swift */,
+				EA4B6195280FC89900810893 /* View */,
+			);
+			path = EnterEmailController;
+			sourceTree = "<group>";
+		};
+		EA4B6195280FC89900810893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA4B6198280FC91100810893 /* EnterEmailNextView.swift */,
+				EA4B6199280FC91100810893 /* EnterEmailView.swift */,
+				EA4B619A280FC91100810893 /* EnterEmailView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -396,6 +424,7 @@
 			files = (
 				EA4B6192280A181500810893 /* SignUpView.xib in Resources */,
 				EAC1208227F420A100D239A8 /* LaunchScreen.storyboard in Resources */,
+				EA4B619D280FC91100810893 /* EnterEmailView.xib in Resources */,
 				EA77166B281086510050B972 /* Localizable.strings in Resources */,
 				EAC1207F27F420A100D239A8 /* Assets.xcassets in Resources */,
 				EA77165E281080BB0050B972 /* swiftgen.yml in Resources */,
@@ -453,8 +482,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA77168D281086680050B972 /* ButtonSignIn.swift in Sources */,
+				EA4B619C280FC91100810893 /* EnterEmailView.swift in Sources */,
 				EA4B617A27FF87BA00810893 /* AuthService.swift in Sources */,
 				EA771693281086680050B972 /* ButtonDefault.swift in Sources */,
+				EA4B619B280FC91100810893 /* EnterEmailNextView.swift in Sources */,
 				EA4B618027FF888D00810893 /* SignInController.swift in Sources */,
 				EA771688281086680050B972 /* StyleUtils.swift in Sources */,
 				EA771672281086680050B972 /* OnboardingModel.swift in Sources */,
@@ -473,6 +504,7 @@
 				EA771677281086680050B972 /* OnboardingView.swift in Sources */,
 				EA4B618C280A17A600810893 /* SignUpPresenter.swift in Sources */,
 				EA77168F281086680050B972 /* Text.swift in Sources */,
+				EA4B6197280FC8A900810893 /* EnterEmailController.swift in Sources */,
 				EA4B618427FF892800810893 /* SignInView.swift in Sources */,
 				EA771691281086680050B972 /* ButtonSecondary.swift in Sources */,
 				EA4B617E27FF883100810893 /* URLPath.swift in Sources */,
