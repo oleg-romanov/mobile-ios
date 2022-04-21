@@ -1,0 +1,16 @@
+xcassets:
+  inputs:
+    - EventMaker/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: EventMaker/Common/Generated/Assets.swift
+      params:
+          enumName: Assets
+
+strings:
+  inputs: EventMaker/Resources/ru.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: EventMaker/Common/Generated/Text.swift
+      params:
+          enumName: Text

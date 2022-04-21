@@ -1,0 +1,36 @@
+/*
+  Localizable.strings
+  EventMaker
+
+  Created by Олег Романов on 19.04.2022.
+  Copyright © 2020 Oleg Romanov. All rights reserved.
+*/
+
+
+
+EventsModel.Category = "Friends";
+
+
+Onboarding.Next = "Next";
+Onboarding.Skip = "Skip";
+Onboarding.Start = "Start";
+
+
+Events.Title = "Events";
+Events.Done = "Done";
+Events.Message = "Added to the list";
+
+
+AddEvent.Add = "Добавить";
+AddEvent.Done = "Готово";
+
+
+SignIn.WithGoogle = "Continue with Google";
+SignIn.WithEmail = "Continue with Email";
+SignIn.WithFacebook = "Continue with Facebook";
+SignIn.WithApple = "Continue with Apple";
+SignIn.AsGuest = "Continue as a guest";
+
+Categories.Title = "Категории";
+
+EventTypes.Title = "Типы события";
