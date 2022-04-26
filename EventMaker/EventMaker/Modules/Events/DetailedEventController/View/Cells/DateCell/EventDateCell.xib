@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="123" id="0gs-Hi-EYT" customClass="EventDateCell" customModule="Toast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0gs-Hi-EYT" id="TNl-Av-GjF">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8g-pX-A9T">
+                        <rect key="frame" x="16" y="16" width="391" height="91"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Q8g-pX-A9T" firstAttribute="top" secondItem="TNl-Av-GjF" secondAttribute="top" constant="16" id="1fp-hp-UV4"/>
+                    <constraint firstAttribute="bottom" secondItem="Q8g-pX-A9T" secondAttribute="bottom" constant="16" id="TkS-US-Ybd"/>
+                    <constraint firstItem="Q8g-pX-A9T" firstAttribute="leading" secondItem="TNl-Av-GjF" secondAttribute="leading" constant="16" id="tuP-Dm-js5"/>
+                    <constraint firstAttribute="trailing" secondItem="Q8g-pX-A9T" secondAttribute="trailing" constant="16" id="zOP-GX-a8Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="Q8g-pX-A9T" id="xM8-sq-yzd"/>
+            </connections>
+            <point key="canvasLocation" x="925.36231884057975" y="55.915178571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

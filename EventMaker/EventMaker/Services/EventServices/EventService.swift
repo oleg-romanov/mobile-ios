@@ -20,6 +20,7 @@ enum GetEventResult {
 
 protocol EventServiceProtocol {
     func getAllEvents(completion: @escaping (GetAllEventsResult) -> Void)
+    func getEvent(id: Int, completion: @escaping (GetEventResult) -> Void)
 }
 
 class EventService: EventServiceProtocol {
@@ -47,6 +48,29 @@ class EventService: EventServiceProtocol {
                 do {
                     let dataResponse = try strongSelf.decoder.decode([Event].self, from: moyaResponse.data)
                     completion(.success(events: dataResponse))
+                } catch {
+                    completion(.failure(error: error))
+                }
+            case let .failure(error):
+                completion(.failure(error: error))
+            }
+        }
+    }
+
+    func getEvent(id: Int, completion: @escaping (GetEventResult) -> Void) {
+        dataProvider.request(.getEvent(id: id)) { [weak self] result in
+            guard let strongSelf = self else { return }
+            switch result {
+            case let .success(moyaResponse):
+                guard (200 ... 299).contains(moyaResponse.statusCode)
+                else {
+                    let message = try? moyaResponse.map(String.self, atKeyPath: "message")
+                    completion(.failure(error: CustomError(errorDescription: message)))
+                    return
+                }
+                do {
+                    let dataResponse = try strongSelf.decoder.decode(Event.self, from: moyaResponse.data)
+                    completion(.success(event: dataResponse))
                 } catch {
                     completion(.failure(error: error))
                 }

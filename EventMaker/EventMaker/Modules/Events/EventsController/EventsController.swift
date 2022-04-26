@@ -73,6 +73,10 @@ final class EventsContoller: UIViewController {
 
 extension EventsContoller: EventsViewInput {
     func presentDetailedEvent(event: Event) {
+        let detailedVC = DetailedEventController(event: event)
+        detailedVC.title = event.name
+        navigationItem.backButtonTitle = ""
+        navigationController?.pushViewController(detailedVC, animated: true)
     }
 
     func reloadEvents() {
@@ -87,5 +91,6 @@ extension EventsContoller: EventsViewInput {
     }
 
     func showError(message: String) {
+        SPAlert.present(title: "Событие не удалено", message: message, preset: .error)
     }
 }

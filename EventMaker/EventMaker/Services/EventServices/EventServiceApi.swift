@@ -11,6 +11,7 @@ import Moya
 
 enum EventServiceApi {
     case getAllEvents
+    case getEvent(id: Int)
 }
 
 extension EventServiceApi: AccessTokenAuthorizable {
@@ -30,12 +31,16 @@ extension EventServiceApi: TargetType {
         switch self {
         case .getAllEvents:
             return "/event"
+        case let .getEvent(id):
+            return "/event/\(id)"
         }
     }
 
     var method: Moya.Method {
         switch self {
         case .getAllEvents:
+            return .get
+        case .getEvent:
             return .get
         }
     }
@@ -47,6 +52,8 @@ extension EventServiceApi: TargetType {
     var task: Task {
         switch self {
         case .getAllEvents:
+            return .requestPlain
+        case .getEvent:
             return .requestPlain
         }
     }
