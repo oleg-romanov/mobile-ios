@@ -88,6 +88,16 @@ extension EventsContoller: EventsViewInput {
     }
 
     func deleteEvent(by id: Int) {
+        if let presenter = presenter {
+            presenter.deleteEvent(by: id) { [weak self] result in
+                switch result {
+                case let .success(event):
+                    SPAlert.present(title: event, message: "Событие удалено", preset: .done)
+                case let .failure(error):
+                    self?.showError(message: error.localizedDescription)
+                }
+            }
+        }
     }
 
     func showError(message: String) {

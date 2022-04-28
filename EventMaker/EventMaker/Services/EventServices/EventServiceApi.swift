@@ -10,8 +10,10 @@ import KeychainSwift
 import Moya
 
 enum EventServiceApi {
+    case createEvent(event: EventDto)
     case getAllEvents
     case getEvent(id: Int)
+    case deleteEvent(id: Int)
 }
 
 extension EventServiceApi: AccessTokenAuthorizable {
@@ -29,19 +31,27 @@ extension EventServiceApi: TargetType {
 
     var path: String {
         switch self {
+        case .createEvent:
+            return "/event"
         case .getAllEvents:
             return "/event"
         case let .getEvent(id):
+            return "/event/\(id)"
+        case let .deleteEvent(id):
             return "/event/\(id)"
         }
     }
 
     var method: Moya.Method {
         switch self {
+        case .createEvent:
+            return .post
         case .getAllEvents:
             return .get
         case .getEvent:
             return .get
+        case .deleteEvent:
+            return .delete
         }
     }
 
@@ -51,9 +61,18 @@ extension EventServiceApi: TargetType {
 
     var task: Task {
         switch self {
+        case let .createEvent(event):
+            let encoder = JSONEncoder()
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            encoder.dateEncodingStrategy = .formatted(dateFormatter)
+            let requestBody = CreateEventRequest(name: event.name, description: event.description, date: event.date, categoryId: event.categoryId, eventTypeId: event.eventTypeId)
+            return .requestCustomJSONEncodable(requestBody, encoder: encoder)
         case .getAllEvents:
             return .requestPlain
         case .getEvent:
+            return .requestPlain
+        case .deleteEvent:
             return .requestPlain
         }
     }

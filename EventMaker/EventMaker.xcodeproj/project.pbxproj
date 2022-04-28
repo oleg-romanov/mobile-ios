@@ -72,6 +72,41 @@
 		EAF9301E281667A700E90CB2 /* EventDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9301C281667A700E90CB2 /* EventDescriptionCell.swift */; };
 		EAF9301F281667A700E90CB2 /* EventDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF9301D281667A700E90CB2 /* EventDescriptionCell.xib */; };
 		EAF93021281667EA00E90CB2 /* HeaderForSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93020281667EA00E90CB2 /* HeaderForSections.swift */; };
+		EAF930242817BC6200E90CB2 /* AddEventProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF930232817BC6200E90CB2 /* AddEventProtocols.swift */; };
+		EAF930262817BC7900E90CB2 /* AddEventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF930252817BC7900E90CB2 /* AddEventPresenter.swift */; };
+		EAF930292817BCCB00E90CB2 /* CategoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF930282817BCCA00E90CB2 /* CategoryProtocols.swift */; };
+		EAF9302B2817BCDF00E90CB2 /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9302A2817BCDF00E90CB2 /* CategoryPresenter.swift */; };
+		EAF9302D2817BD0500E90CB2 /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9302C2817BD0500E90CB2 /* CategoryController.swift */; };
+		EAF930302817BD2C00E90CB2 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9302F2817BD2C00E90CB2 /* CategoryView.swift */; };
+		EAF930322817BD4900E90CB2 /* CategoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF930312817BD4900E90CB2 /* CategoryDataSource.swift */; };
+		EAF930352817BDB400E90CB2 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF930332817BDB400E90CB2 /* CategoryCell.xib */; };
+		EAF930362817BDB400E90CB2 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF930342817BDB400E90CB2 /* CategoryCell.swift */; };
+		EAF930392817BF2B00E90CB2 /* CategoryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF930382817BF2B00E90CB2 /* CategoryModels.swift */; };
+		EAF9303B2817BF4200E90CB2 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9303A2817BF4200E90CB2 /* CategoryService.swift */; };
+		EAF9303D2817BF6E00E90CB2 /* CategoryServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9303C2817BF6E00E90CB2 /* CategoryServiceApi.swift */; };
+		EAF930472819130100E90CB2 /* EventTypeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF930462819130100E90CB2 /* EventTypeModels.swift */; };
+		EAF930492819131300E90CB2 /* EventTypeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF930482819131300E90CB2 /* EventTypeService.swift */; };
+		EAF9304B2819132A00E90CB2 /* EventTypeServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9304A2819132A00E90CB2 /* EventTypeServiceApi.swift */; };
+		EAF9304F2819154C00E90CB2 /* AddEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9304E2819154C00E90CB2 /* AddEventController.swift */; };
+		EAF93053281915B300E90CB2 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93051281915B300E90CB2 /* AddEventView.swift */; };
+		EAF93054281915B300E90CB2 /* AddEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF93052281915B300E90CB2 /* AddEventView.xib */; };
+		EAF93056281915E500E90CB2 /* AddCategoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93055281915E500E90CB2 /* AddCategoryProtocols.swift */; };
+		EAF93058281915F500E90CB2 /* AddCategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93057281915F500E90CB2 /* AddCategoryPresenter.swift */; };
+		EAF9305A2819160B00E90CB2 /* AddCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF930592819160B00E90CB2 /* AddCategoryController.swift */; };
+		EAF9305E2819163E00E90CB2 /* AddCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9305C2819163E00E90CB2 /* AddCategoryView.swift */; };
+		EAF9305F2819163E00E90CB2 /* AddCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF9305D2819163E00E90CB2 /* AddCategoryView.xib */; };
+		EAF93062281A692300E90CB2 /* EventTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93061281A692300E90CB2 /* EventTypeController.swift */; };
+		EAF93064281A693900E90CB2 /* EventTypePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93063281A693900E90CB2 /* EventTypePresenter.swift */; };
+		EAF93066281A695900E90CB2 /* EventTypeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93065281A695900E90CB2 /* EventTypeProtocols.swift */; };
+		EAF9306C281A698100E90CB2 /* EventTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93068281A698100E90CB2 /* EventTypeCell.swift */; };
+		EAF9306D281A698100E90CB2 /* EventTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93069281A698100E90CB2 /* EventTypeView.swift */; };
+		EAF9306E281A698100E90CB2 /* EventTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF9306A281A698100E90CB2 /* EventTypeCell.xib */; };
+		EAF9306F281A698100E90CB2 /* EventTypeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9306B281A698100E90CB2 /* EventTypeDataSource.swift */; };
+		EAF93072281A69DB00E90CB2 /* AddEventTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93071281A69DB00E90CB2 /* AddEventTypeController.swift */; };
+		EAF93074281A69EF00E90CB2 /* AddEventTypePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93073281A69EF00E90CB2 /* AddEventTypePresenter.swift */; };
+		EAF93076281A6A0D00E90CB2 /* AddEventTypeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93075281A6A0D00E90CB2 /* AddEventTypeProtocols.swift */; };
+		EAF9307A281A6A3500E90CB2 /* AddEventTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93078281A6A3500E90CB2 /* AddEventTypeView.swift */; };
+		EAF9307B281A6A3500E90CB2 /* AddEventTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF93079281A6A3500E90CB2 /* AddEventTypeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +180,41 @@
 		EAF9301C281667A700E90CB2 /* EventDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDescriptionCell.swift; sourceTree = "<group>"; };
 		EAF9301D281667A700E90CB2 /* EventDescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDescriptionCell.xib; sourceTree = "<group>"; };
 		EAF93020281667EA00E90CB2 /* HeaderForSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderForSections.swift; sourceTree = "<group>"; };
+		EAF930232817BC6200E90CB2 /* AddEventProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventProtocols.swift; sourceTree = "<group>"; };
+		EAF930252817BC7900E90CB2 /* AddEventPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventPresenter.swift; sourceTree = "<group>"; };
+		EAF930282817BCCA00E90CB2 /* CategoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProtocols.swift; sourceTree = "<group>"; };
+		EAF9302A2817BCDF00E90CB2 /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
+		EAF9302C2817BD0500E90CB2 /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
+		EAF9302F2817BD2C00E90CB2 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		EAF930312817BD4900E90CB2 /* CategoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDataSource.swift; sourceTree = "<group>"; };
+		EAF930332817BDB400E90CB2 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		EAF930342817BDB400E90CB2 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		EAF930382817BF2B00E90CB2 /* CategoryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModels.swift; sourceTree = "<group>"; };
+		EAF9303A2817BF4200E90CB2 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
+		EAF9303C2817BF6E00E90CB2 /* CategoryServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryServiceApi.swift; sourceTree = "<group>"; };
+		EAF930462819130100E90CB2 /* EventTypeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeModels.swift; sourceTree = "<group>"; };
+		EAF930482819131300E90CB2 /* EventTypeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeService.swift; sourceTree = "<group>"; };
+		EAF9304A2819132A00E90CB2 /* EventTypeServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeServiceApi.swift; sourceTree = "<group>"; };
+		EAF9304E2819154C00E90CB2 /* AddEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventController.swift; sourceTree = "<group>"; };
+		EAF93051281915B300E90CB2 /* AddEventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		EAF93052281915B300E90CB2 /* AddEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventView.xib; sourceTree = "<group>"; };
+		EAF93055281915E500E90CB2 /* AddCategoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryProtocols.swift; sourceTree = "<group>"; };
+		EAF93057281915F500E90CB2 /* AddCategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryPresenter.swift; sourceTree = "<group>"; };
+		EAF930592819160B00E90CB2 /* AddCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryController.swift; sourceTree = "<group>"; };
+		EAF9305C2819163E00E90CB2 /* AddCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryView.swift; sourceTree = "<group>"; };
+		EAF9305D2819163E00E90CB2 /* AddCategoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCategoryView.xib; sourceTree = "<group>"; };
+		EAF93061281A692300E90CB2 /* EventTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeController.swift; sourceTree = "<group>"; };
+		EAF93063281A693900E90CB2 /* EventTypePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypePresenter.swift; sourceTree = "<group>"; };
+		EAF93065281A695900E90CB2 /* EventTypeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeProtocols.swift; sourceTree = "<group>"; };
+		EAF93068281A698100E90CB2 /* EventTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTypeCell.swift; sourceTree = "<group>"; };
+		EAF93069281A698100E90CB2 /* EventTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTypeView.swift; sourceTree = "<group>"; };
+		EAF9306A281A698100E90CB2 /* EventTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTypeCell.xib; sourceTree = "<group>"; };
+		EAF9306B281A698100E90CB2 /* EventTypeDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTypeDataSource.swift; sourceTree = "<group>"; };
+		EAF93071281A69DB00E90CB2 /* AddEventTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventTypeController.swift; sourceTree = "<group>"; };
+		EAF93073281A69EF00E90CB2 /* AddEventTypePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventTypePresenter.swift; sourceTree = "<group>"; };
+		EAF93075281A6A0D00E90CB2 /* AddEventTypeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventTypeProtocols.swift; sourceTree = "<group>"; };
+		EAF93078281A6A3500E90CB2 /* AddEventTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventTypeView.swift; sourceTree = "<group>"; };
+		EAF93079281A6A3500E90CB2 /* AddEventTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventTypeView.xib; sourceTree = "<group>"; };
 		F3D14608019A6045D9AA9E64 /* Pods-EventMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventMaker.debug.xcconfig"; path = "Target Support Files/Pods-EventMaker/Pods-EventMaker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -383,6 +453,8 @@
 			isa = PBXGroup;
 			children = (
 				EA4B617D27FF883100810893 /* URLPath.swift */,
+				EAF930372817BEF800E90CB2 /* CategoryService */,
+				EAF93045281912EE00E90CB2 /* EventTypeService */,
 				EAF92FFF2813B7D200E90CB2 /* EventServices */,
 				EA4B617627FF877F00810893 /* AuthService */,
 			);
@@ -410,6 +482,11 @@
 		EAF92FEA2811123800E90CB2 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				EAF93070281A69CB00E90CB2 /* AddEventTypeController */,
+				EAF930602819173F00E90CB2 /* EventTypeController */,
+				EAF9304D281914D800E90CB2 /* AddCategoryController */,
+				EAF930272817BCBA00E90CB2 /* CategoryController */,
+				EAF930222817BC5500E90CB2 /* AddEventController */,
 				EAF92FEB2811124500E90CB2 /* EventsController */,
 				EAF930062815142900E90CB2 /* DetailedEventController */,
 			);
@@ -523,6 +600,130 @@
 			path = DescriptionCell;
 			sourceTree = "<group>";
 		};
+		EAF930222817BC5500E90CB2 /* AddEventController */ = {
+			isa = PBXGroup;
+			children = (
+				EAF930232817BC6200E90CB2 /* AddEventProtocols.swift */,
+				EAF930252817BC7900E90CB2 /* AddEventPresenter.swift */,
+				EAF9304E2819154C00E90CB2 /* AddEventController.swift */,
+				EAF930502819155D00E90CB2 /* View */,
+			);
+			path = AddEventController;
+			sourceTree = "<group>";
+		};
+		EAF930272817BCBA00E90CB2 /* CategoryController */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9302E2817BD1300E90CB2 /* VIew */,
+				EAF930282817BCCA00E90CB2 /* CategoryProtocols.swift */,
+				EAF9302A2817BCDF00E90CB2 /* CategoryPresenter.swift */,
+				EAF9302C2817BD0500E90CB2 /* CategoryController.swift */,
+			);
+			path = CategoryController;
+			sourceTree = "<group>";
+		};
+		EAF9302E2817BD1300E90CB2 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				EAF930342817BDB400E90CB2 /* CategoryCell.swift */,
+				EAF930332817BDB400E90CB2 /* CategoryCell.xib */,
+				EAF9302F2817BD2C00E90CB2 /* CategoryView.swift */,
+				EAF930312817BD4900E90CB2 /* CategoryDataSource.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		EAF930372817BEF800E90CB2 /* CategoryService */ = {
+			isa = PBXGroup;
+			children = (
+				EAF930382817BF2B00E90CB2 /* CategoryModels.swift */,
+				EAF9303A2817BF4200E90CB2 /* CategoryService.swift */,
+				EAF9303C2817BF6E00E90CB2 /* CategoryServiceApi.swift */,
+			);
+			path = CategoryService;
+			sourceTree = "<group>";
+		};
+		EAF93045281912EE00E90CB2 /* EventTypeService */ = {
+			isa = PBXGroup;
+			children = (
+				EAF930462819130100E90CB2 /* EventTypeModels.swift */,
+				EAF930482819131300E90CB2 /* EventTypeService.swift */,
+				EAF9304A2819132A00E90CB2 /* EventTypeServiceApi.swift */,
+			);
+			path = EventTypeService;
+			sourceTree = "<group>";
+		};
+		EAF9304D281914D800E90CB2 /* AddCategoryController */ = {
+			isa = PBXGroup;
+			children = (
+				EAF93055281915E500E90CB2 /* AddCategoryProtocols.swift */,
+				EAF93057281915F500E90CB2 /* AddCategoryPresenter.swift */,
+				EAF930592819160B00E90CB2 /* AddCategoryController.swift */,
+				EAF9305B2819163E00E90CB2 /* View */,
+			);
+			path = AddCategoryController;
+			sourceTree = "<group>";
+		};
+		EAF930502819155D00E90CB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAF93051281915B300E90CB2 /* AddEventView.swift */,
+				EAF93052281915B300E90CB2 /* AddEventView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAF9305B2819163E00E90CB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9305C2819163E00E90CB2 /* AddCategoryView.swift */,
+				EAF9305D2819163E00E90CB2 /* AddCategoryView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAF930602819173F00E90CB2 /* EventTypeController */ = {
+			isa = PBXGroup;
+			children = (
+				EAF93061281A692300E90CB2 /* EventTypeController.swift */,
+				EAF93063281A693900E90CB2 /* EventTypePresenter.swift */,
+				EAF93065281A695900E90CB2 /* EventTypeProtocols.swift */,
+				EAF93067281A698100E90CB2 /* View */,
+			);
+			path = EventTypeController;
+			sourceTree = "<group>";
+		};
+		EAF93067281A698100E90CB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAF93068281A698100E90CB2 /* EventTypeCell.swift */,
+				EAF93069281A698100E90CB2 /* EventTypeView.swift */,
+				EAF9306A281A698100E90CB2 /* EventTypeCell.xib */,
+				EAF9306B281A698100E90CB2 /* EventTypeDataSource.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAF93070281A69CB00E90CB2 /* AddEventTypeController */ = {
+			isa = PBXGroup;
+			children = (
+				EAF93071281A69DB00E90CB2 /* AddEventTypeController.swift */,
+				EAF93073281A69EF00E90CB2 /* AddEventTypePresenter.swift */,
+				EAF93075281A6A0D00E90CB2 /* AddEventTypeProtocols.swift */,
+				EAF93077281A6A3500E90CB2 /* View */,
+			);
+			path = AddEventTypeController;
+			sourceTree = "<group>";
+		};
+		EAF93077281A6A3500E90CB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAF93078281A6A3500E90CB2 /* AddEventTypeView.swift */,
+				EAF93079281A6A3500E90CB2 /* AddEventTypeView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -584,14 +785,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF9305F2819163E00E90CB2 /* AddCategoryView.xib in Resources */,
 				EA4B6192280A181500810893 /* SignUpView.xib in Resources */,
+				EAF9306E281A698100E90CB2 /* EventTypeCell.xib in Resources */,
 				EAC1208227F420A100D239A8 /* LaunchScreen.storyboard in Resources */,
 				EAF930162816678200E90CB2 /* EventDateCell.xib in Resources */,
+				EAF93054281915B300E90CB2 /* AddEventView.xib in Resources */,
 				EA4B619D280FC91100810893 /* EnterEmailView.xib in Resources */,
 				EA77166B281086510050B972 /* Localizable.strings in Resources */,
 				EAF9301F281667A700E90CB2 /* EventDescriptionCell.xib in Resources */,
 				EAC1207F27F420A100D239A8 /* Assets.xcassets in Resources */,
 				EA77165E281080BB0050B972 /* swiftgen.yml in Resources */,
+				EAF9307B281A6A3500E90CB2 /* AddEventTypeView.xib in Resources */,
+				EAF930352817BDB400E90CB2 /* CategoryCell.xib in Resources */,
 				EA4B618527FF892800810893 /* SignInView.xib in Resources */,
 				EAF9301A2816679D00E90CB2 /* EventParticipantsCell.xib in Resources */,
 			);
@@ -646,19 +852,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF93066281A695900E90CB2 /* EventTypeProtocols.swift in Sources */,
 				EA77168D281086680050B972 /* ButtonSignIn.swift in Sources */,
 				EAF930082815144800E90CB2 /* DetailedEventController.swift in Sources */,
+				EAF9306F281A698100E90CB2 /* EventTypeDataSource.swift in Sources */,
 				EA4B619C280FC91100810893 /* EnterEmailView.swift in Sources */,
 				EA4B617A27FF87BA00810893 /* AuthService.swift in Sources */,
+				EAF93076281A6A0D00E90CB2 /* AddEventTypeProtocols.swift in Sources */,
 				EA771693281086680050B972 /* ButtonDefault.swift in Sources */,
+				EAF9306C281A698100E90CB2 /* EventTypeCell.swift in Sources */,
+				EAF9307A281A6A3500E90CB2 /* AddEventTypeView.swift in Sources */,
 				EA4B619B280FC91100810893 /* EnterEmailNextView.swift in Sources */,
 				EA4B618027FF888D00810893 /* SignInController.swift in Sources */,
 				EAF92FF1281264D900E90CB2 /* EventsController.swift in Sources */,
 				EA771688281086680050B972 /* StyleUtils.swift in Sources */,
 				EA771672281086680050B972 /* OnboardingModel.swift in Sources */,
+				EAF9303D2817BF6E00E90CB2 /* CategoryServiceApi.swift in Sources */,
 				EA4B617527FF875600810893 /* Keys.swift in Sources */,
 				EA4B617227FE34E600810893 /* SignInPresenter.swift in Sources */,
 				EAF930052813BCAC00E90CB2 /* EventServiceApi.swift in Sources */,
+				EAF930262817BC7900E90CB2 /* AddEventPresenter.swift in Sources */,
+				EAF93053281915B300E90CB2 /* AddEventView.swift in Sources */,
+				EAF9304F2819154C00E90CB2 /* AddEventController.swift in Sources */,
+				EAF930302817BD2C00E90CB2 /* CategoryView.swift in Sources */,
 				EAF9300B2815149400E90CB2 /* EventViewModel.swift in Sources */,
 				EAF92FF62812653700E90CB2 /* EventsView.swift in Sources */,
 				EA4B617027FE34CC00810893 /* SignInProtocols.swift in Sources */,
@@ -666,18 +882,26 @@
 				EAF930012813B84600E90CB2 /* EventModels.swift in Sources */,
 				EA4B618727FF898700810893 /* MDTextField.swift in Sources */,
 				EAC1207A27F4209F00D239A8 /* OnboardingController.swift in Sources */,
+				EAF930322817BD4900E90CB2 /* CategoryDataSource.swift in Sources */,
 				EA77168B281086680050B972 /* ButtonSignInWithEmail.swift in Sources */,
 				EA771681281086680050B972 /* StartController.swift in Sources */,
 				EA4B617C27FF87ED00810893 /* AuthServiceApi.swift in Sources */,
+				EAF9304B2819132A00E90CB2 /* EventTypeServiceApi.swift in Sources */,
+				EAF9306D281A698100E90CB2 /* EventTypeView.swift in Sources */,
 				EAF92FFE2813B7B000E90CB2 /* DateSectionHeader.swift in Sources */,
 				EA4B618E280A17C900810893 /* SignUpController.swift in Sources */,
 				EA77167D281086680050B972 /* StartProtocols.swift in Sources */,
 				EA771675281086680050B972 /* SlidesDataSource.swift in Sources */,
 				EA771677281086680050B972 /* OnboardingView.swift in Sources */,
+				EAF9302D2817BD0500E90CB2 /* CategoryController.swift in Sources */,
 				EAF93021281667EA00E90CB2 /* HeaderForSections.swift in Sources */,
 				EAF92FEF2811127400E90CB2 /* EventsPresenter.swift in Sources */,
+				EAF9305A2819160B00E90CB2 /* AddCategoryController.swift in Sources */,
 				EA4B618C280A17A600810893 /* SignUpPresenter.swift in Sources */,
+				EAF930362817BDB400E90CB2 /* CategoryCell.swift in Sources */,
 				EA77168F281086680050B972 /* Text.swift in Sources */,
+				EAF930472819130100E90CB2 /* EventTypeModels.swift in Sources */,
+				EAF93064281A693900E90CB2 /* EventTypePresenter.swift in Sources */,
 				EAF92FF32812650900E90CB2 /* Event.swift in Sources */,
 				EA4B6197280FC8A900810893 /* EnterEmailController.swift in Sources */,
 				EAF9301E281667A700E90CB2 /* EventDescriptionCell.swift in Sources */,
@@ -685,21 +909,33 @@
 				EA771691281086680050B972 /* ButtonSecondary.swift in Sources */,
 				EA4B617E27FF883100810893 /* URLPath.swift in Sources */,
 				EAF930032813BBF300E90CB2 /* EventService.swift in Sources */,
+				EAF93062281A692300E90CB2 /* EventTypeController.swift in Sources */,
 				EAC1207627F4209F00D239A8 /* AppDelegate.swift in Sources */,
 				EAF9300F2816669300E90CB2 /* EventViewModelItems.swift in Sources */,
+				EAF930292817BCCB00E90CB2 /* CategoryProtocols.swift in Sources */,
 				EAF9300D281514C200E90CB2 /* EventViewModelItem.swift in Sources */,
+				EAF9302B2817BCDF00E90CB2 /* CategoryPresenter.swift in Sources */,
 				EA7716662810826A0050B972 /* Assets.swift in Sources */,
 				EA77167A281086680050B972 /* SlideCell.swift in Sources */,
 				EAF92FFB2813B77700E90CB2 /* EventCell.swift in Sources */,
 				EAF92FED2811125C00E90CB2 /* EventsProtocols.swift in Sources */,
+				EAF93074281A69EF00E90CB2 /* AddEventTypePresenter.swift in Sources */,
+				EAF930492819131300E90CB2 /* EventTypeService.swift in Sources */,
 				EAF930172816678200E90CB2 /* EventDateCell.swift in Sources */,
 				EA4B617827FF879A00810893 /* AuthModels.swift in Sources */,
 				EAF9301B2816679D00E90CB2 /* EventParticipantsCell.swift in Sources */,
+				EAF93056281915E500E90CB2 /* AddCategoryProtocols.swift in Sources */,
 				EA4B6193280A181500810893 /* SignUpView.swift in Sources */,
 				EA77167F281086680050B972 /* StartPresenter.swift in Sources */,
 				EA4B618A280A179300810893 /* SignUpProtocols.swift in Sources */,
 				EAF92FF82813B6F900E90CB2 /* EventsDataSource.swift in Sources */,
+				EAF9305E2819163E00E90CB2 /* AddCategoryView.swift in Sources */,
+				EAF930392817BF2B00E90CB2 /* CategoryModels.swift in Sources */,
+				EAF93058281915F500E90CB2 /* AddCategoryPresenter.swift in Sources */,
 				EA771686281086680050B972 /* Grid.swift in Sources */,
+				EAF930242817BC6200E90CB2 /* AddEventProtocols.swift in Sources */,
+				EAF93072281A69DB00E90CB2 /* AddEventTypeController.swift in Sources */,
+				EAF9303B2817BF4200E90CB2 /* CategoryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

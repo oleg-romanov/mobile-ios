@@ -11,6 +11,14 @@ struct CustomeError: LocalizedError {
     var errorDescription: String?
 }
 
+struct CreateEventRequest: Encodable {
+    let name: String
+    let description: String
+    let date: Date
+    let categoryId: Int
+    let eventTypeId: Int
+}
+
 struct EventResponse: Decodable {
     let id: Int
     let name: String
@@ -27,4 +35,8 @@ struct GetAllEventsResponse: Decodable {
 
 struct GetOneEvent: Decodable {
     let event: Event
+}
+
+struct CreateEvent: Encodable {
+    let id: Int
 }
