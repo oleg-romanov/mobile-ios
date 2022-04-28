@@ -18,6 +18,37 @@ internal enum Text {
         /// Начать
         internal static let start = Text.tr("Localizable", "Onboarding.Start")
     }
+    
+    internal enum AddEvent {
+        /// Добавить
+        internal static let add = Text.tr("Localizable", "AddEvent.Add")
+        /// Готово
+        internal static let done = Text.tr("Localizable", "AddEvent.Done")
+    }
+
+    internal enum Events {
+        /// Готово
+        internal static let done = Text.tr("Localizable", "Events.Done")
+        /// добавлен в список
+        internal static let message = Text.tr("Localizable", "Events.Message")
+        /// Люди
+        internal static let title = Text.tr("Localizable", "Events.Title")
+    }
+
+    internal enum Categories {
+        /// Категории
+        internal static let title = Text.tr("Localizable", "Categories.Title")
+    }
+
+    internal enum EventTypes {
+        /// Типы событий
+        internal static let title = Text.tr("Localizable", "EventTypes.Title")
+    }
+
+    internal enum EventsModel {
+        /// Друзья
+        internal static let category = Text.tr("Localizable", "EventsModel.Category")
+    }
 
     internal enum SignIn {
         internal static let continueWithGoogle = Text.tr("Localizable", "SignIn.WithGoogle")
